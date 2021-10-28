@@ -5,7 +5,8 @@ import requests
 import http.client
 import mimetypes
 import plotly.express as px 
-import numpy
+import matplotlib.pyplot as plt
+import numpy as np
 
 lor = Flask(__name__)
 
@@ -64,7 +65,22 @@ def dash():
      #   'status': 'ok', 
      #   'data': movies
     #})
+    #
+    
+
+    fig = plt.figure()
+
+    x = [1,2,3,4,5,6,7,8,9,10]
+    height = [8,12,8,5,4,3,2,1,0,0]
+    width = 1.0
+
+    plt.bar(movies, budget, width, color='b' )
+
+    plt.savefig('SimpleBar.png')
+    plt.show()
+
     return render_template("home.html",name = movies)
+
 
     
   
