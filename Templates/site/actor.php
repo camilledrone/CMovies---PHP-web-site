@@ -4,33 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CMovies - Page d'accueil</title>
+    <title>CMovies - Actor</title>
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
         rel="stylesheet"
     >
 </head>
  
-    <body style="background-color:#D7D5D8;">
+    <body class="d-flex flex-column min-vh-100" style="background-color:#D7D5D8;">
+  
  
     <?php include('header.php'); ?>
+	<div class="container">
     
     <!-- Le corps -->
-    <div class="container">
-        <div id="corps">
-            <h1 style="color:#7E5F9D;">CMovies</h1>
-        
-            <p>
-                Welcome on CMovies!<br />
-                You're looking for a movie, a genre, an actor .. you're in the right way !
-            </p>
+    
+    <div id="corps">
+        <h1 style="color:#7E5F9D;">Actor</h1>
 
-            <h3> Enter a movie's name </h3>
-        </div>
-</div>
+        <h3> Choose an actor </h3>
+    </div>
     
     <!-- Le pied de page -->
     
-    
+</div>
     </body>
 </html>
